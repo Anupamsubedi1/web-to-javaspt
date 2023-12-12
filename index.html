@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* 
       h1 {
         color: green;
 
@@ -34,13 +40,71 @@
 
       #header p {
         color: blueviolet;
+      } */
+
+      .box>h1 {
+        color: red;
       }
+
+      .bx>h1 {
+        color: green;
+      }
+
+      .bx~p {
+        color: blueviolet;
+      }
+
+      .bx+p {
+        color: red;
+      }
+
+      .hover:hover {
+        color: blue;
+      }
+
+      .bx p:hover:after {
+        content: 'hello';
+        font-weight: bold;
+      }
+    </style>
+
     </style>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div id="header">
+    <div class="box">
+      <h1>hello box 1</h1>
+      <div class="child">
+        <h1>hello box 2 </h1>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <hr>
+    <div class="bx">
+      <h1>Lorem ipsum dolor sit amet.
+      </h1>
+      <p>lorem 20</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum necessitatibus eveniet dolorum suscipit quo,
+      assumenda tempora voluptatibus quae libero ab in harum asperiores totam laboriosam mollitia. Fuga, sed quod?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum necessitatibus eveniet dolorum suscipit quo,
+      assumenda tempora voluptatibus quae libero ab in harum asperiores totam laboriosam mollitia. Fuga, sed quod?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum necessitatibus eveniet dolorum suscipit quo,
+      assumenda tempora voluptatibus quae libero ab in harum asperiores totam laboriosam mollitia. Fuga, sed quod?</p>
+    <br>
+
+    <hr>
+    <div class="hover">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo, eum sint quae beatae totam perferendis
+      facilis asperiores laborum, in suscipit sequi corrupti, necessitatibus blanditiis voluptates animi! Fugiat, quae
+      suscipit.
+    </div>
+
+
+    <!-- <div id="header">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea saepe adipisci eius odit facere suscipit omnis
         similique in. Officia repudiandae eius, impedit perferendis quos doloribus quam architecto animi quibusdam quia?
       </p>
@@ -69,6 +133,6 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis reprehenderit tempore officia, quos
       voluptates exercitationem quia totam facere, laborum dolor quisquam iste tempora rerum a perspiciatis autem quas
       maiores?</p>
-  </div>
+  </div> -->
 
 </html>
