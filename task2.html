@@ -53,14 +53,16 @@
       .div1 {
         height: 60%;
         width: 100%;
-        background-image: url(maxresdefault.jpg);
+        /* background-image: url(maxresdefault.jpg);
         border-radius: 8px 8px 0 0;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center; */
         outline: none;
         border: none;
         overflow: none;
+        backdrop-filter: blur(2px);
+        z-index: 1;
 
 
       }
@@ -104,6 +106,16 @@
         letter-spacing: 2px;
       }
 
+      .bx1back {
+        background-image: url(maxresdefault.jpg);
+        filter: blur(2px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 60%;
+        width: 100%;
+      }
+
       .new {
         position: relative;
         left: 28%;
@@ -127,6 +139,7 @@
       <div class="bx">
         <div class="cx">
           <div class="div1">
+            <div class="bx1back"></div>
 
 
 
