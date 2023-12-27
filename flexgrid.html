@@ -25,6 +25,7 @@
         align-items: start;
         flex-wrap: wrap;
         align-content: start;
+        justify-content: end;
 
 
 
@@ -33,27 +34,29 @@
 
       .child1 {
         background-color: brown;
-        order: 1;
+        flex-grow: 1;
+        flex-shrink: 4;
+
       }
 
       .child2 {
         background-color: blue;
-        order: 4;
+
       }
 
       .child3 {
         background-color: chartreuse;
-        order: 3;
+
       }
 
       .child4 {
         background-color: chocolate;
-        order: 2;
+
       }
 
       .child5 {
         background-color: darkgreen;
-        order: 5;
+
         align-self: baseline;
       }
     </style>
@@ -61,19 +64,19 @@
 
   <body>
     <div class="par">
-      <div class="child1">
+      <div class="child1 b">
         <p>Box1</p>
       </div>
-      <div class="child2">
+      <div class="child2 b">
         <p>Box2</p>
       </div>
-      <div class="child3">
+      <div class="child3 b">
         <p>Box3</p>
       </div>
-      <div class="child4">
+      <div class="child4 b">
         <p>Box4</p>
       </div>
-      <div class="child5">
+      <div class="child5 b">
         <p>Box5</p>
       </div>
 
